@@ -34,7 +34,7 @@ if wheels == 2  :
     battery = input("Enter type of vehicle with battery yes/no")
     if (battery == "yes"):
         print("This E-bike with battery")
-    elif battery == "":
+    else:
         print ("wrong input")
 elif wheels ==2 and type == "battery" :
     print("This is a E-bicycle")
