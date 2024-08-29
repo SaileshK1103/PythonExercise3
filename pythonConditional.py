@@ -1,5 +1,5 @@
 #Conditionals
-# Exercise3.1
+# Example1
 '''
 age = int(input("Enter age: "))
 if 15 <= age < 18:
@@ -8,7 +8,7 @@ if (age >=18 or age>=15 and weight >=55):
     print("The medicine can be used.")
 '''
 
-#Exercise3.2
+#Example2
 '''
 score = float(input("Enter score: "))
 if score > 90:
@@ -25,8 +25,8 @@ elif score>40:
     print("C2")
 '''
 
-#Exercise3.3
-
+#Example3
+'''
 wheels = int(input("Enter number of wheels: "))
 
 if wheels == 2  :
@@ -44,8 +44,8 @@ elif wheels ==4 :
     print("This is a car")
 elif wheels > 4 :
     print("This is not such vehicle")
-
-#Exercise 3.4
+'''
+#Example4
 '''
 age = int(input("Enter age: "))
 if age>=65:
@@ -56,4 +56,62 @@ elif 7<=age<=17:
     print("You are now studying")
 elif 0<=age<=6 :
     print("You are a Child")
+'''
+#Exercise 3.1
+'''
+length = float(input("Enter the length of a zander in centimeters"))
+if (length>=42):
+    print("The zander meets the size limit, you can keep it")
+else:
+    print("The zander does not meet the size limit")
+    print("The zander was", 42 - length, "centimeters below the size limit.")
+
+'''
+#Exercise 3.2
+'''
+
+cabinClass = input("Enter cabin class of a cruise ship, LUX/A/B/C ")
+if cabinClass =="LUX":
+    print("Upper deck cabin with balcony")
+elif cabinClass=="A":
+    print("Above the car deck, equipped with a window.")
+elif cabinClass=="B":
+    print("windowless cabin above the car deck.")
+elif cabinClass == "C":
+    print("windowless cabin above the car deck.")
+else:
+    print("Invalid cabin class")
+
+'''
+#Excersice 3.3
+'''
+gender = input("Enter your gender: Male/Female")
+if gender == "male":
+    hemoglobin = float(input("Enter the hemoglobin value g/l"))
+    if hemoglobin < 134:
+        print(f"The {gender}hemoglobin level is low")
+    elif 134<=hemoglobin<=167:
+        print(f"The {gender}hemoglobin level is normal")
+    elif hemoglobin > 167:
+        print(f"The {gender}hemoglobin level is high")
+elif gender == "female":
+    hemoglobin = float(input("Enter the hemoglobin value g/l"))
+    if hemoglobin < 117:
+        print(f"The {gender}hemoglobin level is low")
+    elif 117<=hemoglobin<=155:
+        print(f"The {gender}hemoglobin level is normal")
+    elif hemoglobin > 155:
+        print(f"The {gender}hemoglobin level is high")
+
+'''
+
+#Exercise 3.4
+'''
+year =""
+while year != "exit":
+    year = int(input("Enter year or type exit to terminate: "))
+    if (year%4 == 0) and (year%100!= 0) or (year%400 ==0):
+        print(f"The entered year is a leap year {year}")
+    else:
+        print(f"The entered year is a non-leap year {year}")
 '''
